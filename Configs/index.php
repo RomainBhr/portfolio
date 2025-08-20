@@ -1,0 +1,1 @@
+<?php header('Location: https://www.tracamatrix.com/error/404/'); exit(); ?>
