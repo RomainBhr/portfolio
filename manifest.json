@@ -1,0 +1,17 @@
+{
+  "short_name": "Romain Boehler",
+  "name": "Romain Boehler",
+  "icons": [
+    {
+      "src": "images/logos/icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "http://127.0.0.1/portfolio/",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#38b000"
+}

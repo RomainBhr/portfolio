@@ -1,91 +1,16 @@
 RewriteEngine On
 
-RewriteRule ^index.php/(.*)$ https://www.tracabac.com/error/404/
-RewriteRule ^application/(.*)$ https://www.tracabac.com/error/404/
-RewriteRule ^configs/(.*)$ https://www.tracabac.com/error/404/
-RewriteRule ^configs/mail/(.*)$ https://www.tracabac.com/error/404/
-RewriteRule ^libs/(.*)$ https://www.tracabac.com/error/404/
-RewriteRule ^application/vues/adminX5710/(.*)$ https://www.tracabac.com/error/404/
+RewriteRule ^index.php/(.*)$ http://127.0.0.1/portfolio/error/404/
+RewriteRule ^application/(.*)$ http://127.0.0.1/portfolio/error/404/
+RewriteRule ^configs/(.*)$ http://127.0.0.1/portfolio/error/404/
+RewriteRule ^configs/mail/(.*)$ http://127.0.0.1/portfolio/error/404/
+RewriteRule ^libs/(.*)$ http://127.0.0.1/portfolio/error/404/
+RewriteRule ^application/vues/adminX5710/(.*)$ http://127.0.0.1/portfolio/error/404/
 
-RewriteRule ^categories/sous-categorie/([0-9]+)-(.*)/$ index.php?cas=afficherCategorie&categorie=$1-$2
-RewriteRule ^categories/([0-9]+)-(.*)$ index.php?cas=afficherLaCategorie&categorie=$1-$2
-RewriteRule ^compte/([0-9]+)-(.*)$ index.php?cas=afficherLeCompte&categorie=$1-$2
-RewriteRule ^client/([0-9]+)-(.*)$ index.php?cas=afficherLeClient&categorie=$1-$2
-RewriteRule ^fournisseur/([0-9]+)-(.*)$ index.php?cas=afficherLeFournisseur&categorie=$1-$2
-RewriteRule ^elements/(.*)/$ index.php?cas=afficherElement&categorie=$1
-RewriteRule ^recuperation-mot-de-passe/(.*)$ index.php?cas=afficherMdpOublier&categorie=$1
-RewriteRule ^mon-backoffice/$ index.php?cas=afficherBackOfficeCuisine
-RewriteRule ^mon-compte/$ index.php?cas=afficherMonCompte
-RewriteRule ^mon-etablissement/$ index.php?cas=afficherMonEtablissement
-RewriteRule ^bac-existant/$ index.php?cas=afficherBacExistant
-RewriteRule ^date-allotissement/$ index.php?cas=afficherDateAllo
-RewriteRule ^tableau-activiter-client/$ index.php?cas=afficherTableauActiviterClient
-RewriteRule ^date-portage/$ index.php?cas=afficherDatePortage
-RewriteRule ^date-soncompte/$ index.php?cas=afficherDateSonCompte
-RewriteRule ^date-commande/$ index.php?cas=afficherDateCommande
-RewriteRule ^date-prepacommande/$ index.php?cas=afficherDatePrepaCommande
-RewriteRule ^fermer-mise-a-jour/$ index.php?cas=afficherInfoMiseAJour
-RewriteRule ^infos/mise-a-jour/$ index.php?cas=afficherMiseAJour
-RewriteRule ^liste-commande/$ index.php?cas=afficherListeCommande
-RewriteRule ^liste-client/$ index.php?cas=afficherListeClient
-RewriteRule ^liste-creation-commande/$ index.php?cas=afficherListeCreationCommande
-RewriteRule ^ajouter-panier/$ index.php?cas=afficherAjouterPanier
-RewriteRule ^ajouter-client-panier/$ index.php?cas=afficherAjouterClientPanier
-RewriteRule ^valider-panier-commande/$ index.php?cas=afficherValiderPanier
-RewriteRule ^date-element/$ index.php?cas=afficherDateElement
-RewriteRule ^upload-excel/$ index.php?cas=afficherUplodExcel
-RewriteRule ^doawnload-excel/$ index.php?cas=afficherDownloadExcel
-RewriteRule ^ref-fournisseur/$ index.php?cas=afficherRefFournisseur
-RewriteRule ^modification-etiquette/$ index.php?cas=afficherModifEtiquette
-RewriteRule ^sup-notif/$ index.php?cas=afficherSupNotif
-RewriteRule ^sup-commande/$ index.php?cas=afficherSupCommande
-RewriteRule ^etiquettes/$ index.php?cas=afficherEtiquette
-RewriteRule ^ref-fournisseur-c/$ index.php?cas=afficherRefFournisseurCouvercle
-RewriteRule ^tableau-alerte/$ index.php?cas=afficherTableauAfk
-RewriteRule ^menu/$ index.php?cas=afficherMenuRedirection
-#RewriteRule ^map/$ index.php?cas=afficherMap
-RewriteRule ^element-inactif/$ index.php?cas=afficherElemInactif
-RewriteRule ^deconnexion/$ index.php?cas=afficherDeconnexion
-RewriteRule ^connexion/$ index.php?cas=afficherConnexion
-RewriteRule ^mentions-legals/$ index.php?cas=afficherMentions
-RewriteRule ^accueil/$ index.php?cas=afficherAcc
-RewriteRule ^tournee/$ index.php?cas=afficherTournee
-RewriteRule ^modifier-ordre-tournee/$ index.php?cas=afficherModifierOrdreTournee
-RewriteRule ^supprimer-listing-tournee/$ index.php?cas=afficherSupprimerListingTournee
-RewriteRule ^date-contenant-element/$ index.php?cas=afficherDateContenant
-RewriteRule ^parametre-commande/$ index.php?cas=afficherParametreCommande
-RewriteRule ^afficher-permission/$ index.php?cas=afficherPermission
-RewriteRule ^modifier-permission/$ index.php?cas=afficherModifierPermission
-RewriteRule ^modifier-fournisseur/$ index.php?cas=afficherModifierRefFournisseur
-RewriteRule ^mon-etablissemnt/$ index.php?cas=afficherMonEtablissement
+RewriteRule ^ma-carriere/$ index.php?cas=afficherMaCarriere
 
-RewriteRule ^scan/$ index.php?cas=afficherScan
-RewriteRule ^temperature-scan/$ index.php?cas=afficherTemp
-RewriteRule ^recherche-scan/$ index.php?cas=afficherRechercheScan
-RewriteRule ^recherche-element/$ index.php?cas=afficherRechercheElement
+RewriteRule ^images/(.*)$ public/images/$1
 
-RewriteRule ^images/bacs/(.*)$ public/images/bacs/$1
-RewriteRule ^images/couvercles/(.*)$ public/images/couvercles/$1
-RewriteRule ^images/signatures/(.*)$ public/signature/$1
-RewriteRule ^images/categories/principal/([0-9]+)/(.*)$ public/images/lacategorie/$1/$2
-RewriteRule ^images/exemples/([0-9]+)/(.*)$ public/images/categorie/exemple/$1/$2
-RewriteRule ^images/fond/(.*)$ public/images/fond/$1
-RewriteRule ^images/livreurs/(.*)$ public/images/livreur/$1
-RewriteRule ^images/producteurs/(.*)$ public/images/producteur/$1
-RewriteRule ^images/fournisseurs/(.*)$ public/fournisseur/$1
-RewriteRule ^images/bacs-couvercle/fournisseurs/([0-9]+)/(.*)$ public/images/fournisseur/$1/$2
-RewriteRule ^images/autres/(.*)$ public/images/autre/$1
-RewriteRule ^images/defauts/(.*)$ public/images/default/$1
-RewriteRule ^images/slider/(.*)$ public/images/slider/$1
-RewriteRule ^images/icons/(.*)$ public/images/icon/$1
-RewriteRule ^images/logos/(.*)$ public/images/logos/$1
-RewriteRule ^images/societe/(.*)$ public/images/societe/$1
-RewriteRule ^images/icons/(.*)$ public/images/icon/$1
-RewriteRule ^images/categories/(.*)/(.*)$ public/images/categorie/$1/$2
-RewriteRule ^images/magnettes/(.*)$ public/images/magnette/$1
-RewriteRule ^images/sous-cat/(.*)/(.*)$ public/images/sous-cat/$1/$2
-
-RewriteRule ^videos/([0-9]+)/(.*)$ public/video/produit/$1/$2
 RewriteRule ^zip/(.*)$ public/zip/$1
 RewriteRule ^docs/(.*)$ public/docs/$1
 RewriteRule ^download/(.*)$ public/download/$1
@@ -93,7 +18,7 @@ RewriteRule ^videos/(.*)$ public/videos/$1
 
 RewriteRule ^fonts/(.*)$ public/fonts/$1
 RewriteRule ^js/(.*)$ public/js/$1
-RewriteRule ^styles/(.*)$ public/style/$1
+RewriteRule ^styles/(.*)$ public/styles/$1
 
 RewriteRule ^error/404/$ index.php?cas=Erreur404
 

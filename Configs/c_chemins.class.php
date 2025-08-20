@@ -4,6 +4,8 @@ class Chemins {
     const MODELES = "API/modeles/";
     
     const VUES = "API/vues/";
+    const VUES_PAGE = "API/vues/pages/";
+    const VUES_INCLUDES = "API/vues/includes/";
     const VUES_NOTIF = "API/vues/notifications/";
     const VUES_OPTIONS = "API/vues/options/";
     const x5710 = "API/vues/admin_x5710/";
