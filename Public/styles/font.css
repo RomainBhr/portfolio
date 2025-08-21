@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Material Icons";
+    src: url("http://127.0.0.1/portfolio/fonts/MaterialIcons-Regular.ttf") format("truetype");
+}
+
+.Material_Icons{
+    font-family: Material Icons,  sans-serif!important;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("http://127.0.0.1/portfolio/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+}
+
+.Montserrat{
+    font-family: Montserrat,  sans-serif!important;
+}
+
+@font-face {
+    font-family: "Londrina Shadow";
+    src: url("http://127.0.0.1/portfolio/fonts/LondrinaShadow-Regular.ttf") format("truetype");
+}
+
+.Londrina_Shadow {
+    font-family: Londrina Shadow, sans-serif !important;
+}
+
+@font-face {
+    font-family: "Press Start2P";
+    src: url("http://127.0.0.1/portfolio/fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+
+.Press_Start2P{
+    font-family: Press Start2P,  sans-serif!important;
+}
